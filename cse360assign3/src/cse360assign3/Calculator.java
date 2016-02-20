@@ -1,7 +1,9 @@
 package cse360assign3;
 
 /**
- * @author Leo
+ * @author Leo Lacroix
+ * Date: 2/19/2016
+ * CSE 360 Assignment 3
  *
  */
 public class Calculator 
@@ -9,9 +11,12 @@ public class Calculator
 	
 	private int total;
 	
+	private String history = "" + total;
+	
 	/**
 	 * 
 	 */
+	
 	public Calculator () 
 	{
 		
@@ -38,6 +43,8 @@ public class Calculator
 		
 		total = total + value;
 		
+		history = history + " + " + value;
+		
 	}
 
 	
@@ -49,6 +56,7 @@ public class Calculator
 	{
 		total = total - value;
 		
+		history = history + " - " + value;
 	}
 	
 	
@@ -60,6 +68,7 @@ public class Calculator
 	{
 		total = total * value;
 		
+		history = history + " * " + value;
 	}
 	
 	
@@ -75,6 +84,9 @@ public class Calculator
 		}
 		
 		total = (int) total / value;
+		
+		history = history + " / " + value;
+		
 	}
 	
 	
@@ -85,7 +97,7 @@ public class Calculator
 	public String getHistory () 
 	{
 		
-		return "";
+		return history;
 	}
 
 }
