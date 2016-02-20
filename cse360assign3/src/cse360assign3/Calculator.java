@@ -4,6 +4,7 @@ package cse360assign3;
  * @author Leo Lacroix
  * Date: 2/19/2016
  * CSE 360 Assignment 3
+ * PIN: 501
  *
  */
 public class Calculator 
